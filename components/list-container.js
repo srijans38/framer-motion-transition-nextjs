@@ -24,7 +24,7 @@ export default function ListContainer({ title, layoutId }) {
                 alt="cat"
                 className="h-32 w-56 rounded-lg object-cover"
               />
-              <p className="mt-2 mx-1 font-bold w-56 text-sm ">
+              <p className="mt-2 mx-1 font-bold w-56 text-sm truncate">
                 Click Me Click Me Click Me Click Me !!
               </p>
             </a>
@@ -37,7 +37,7 @@ export default function ListContainer({ title, layoutId }) {
                 alt="cat"
                 className="h-32 w-56 rounded-lg object-cover"
               />
-              <p className="mt-2 mx-1 font-bold w-56 text-sm ">
+              <p className="mt-2 mx-1 font-bold w-56 text-sm truncate">
                 Cat Cat Cat Cat Cat Cat Cat Cat!!
               </p>
             </a>
