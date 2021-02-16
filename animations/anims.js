@@ -7,6 +7,9 @@ export const fadeInUp = {
     y: 0,
     opacity: 1,
   },
+  exit: {
+    opacity: 0,
+  },
 };
 
 export const rotateIntoPlace = {
@@ -29,7 +32,10 @@ export const stagger = {
     y: 0,
     opacity: 1,
     transition: {
-      staggerChildren: 0.6,
+      staggerChildren: 0.2,
     },
+  },
+  exit: {
+    opacity: 0,
   },
 };
