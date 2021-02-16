@@ -1,10 +1,19 @@
 import '../styles/globals.css';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps, router }) {
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  });
+
   return (
     <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} key={router.route} />
+      <AnimateSharedLayout>
+        <Component {...pageProps} key={router.route} />
+      </AnimateSharedLayout>
     </AnimatePresence>
   );
 }
